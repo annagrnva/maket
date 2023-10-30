@@ -1,0 +1,170 @@
+.footer {
+  background-color: black;
+
+  @include mediaTablet {
+    display: flex;
+    
+ }
+
+}
+
+.footer-logo__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 182px;
+  padding: 80px 0 48px 0;
+
+  @include mediaTablet {
+    display: flex;
+    align-items: center;
+ }
+}
+
+.footer-logo__blue {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(79, 143, 240, 1);
+
+}
+
+.footer-logo__white {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-logo__text {
+  text-transform: lowercase;
+  color: white;
+
+  @include mediaTablet {
+    display: none;
+ }
+}
+
+.footer-column {
+  display: flex;
+  gap: 80px;
+  padding: 48px 0 64px 0;
+}
+
+.footer-line {
+  width: 1120px;
+  background: rgba(140, 140, 140, 1);
+  border: 1px solid rgba(140, 140, 140, 1);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-contacts__address {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-contacts__address-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-contacts__address-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(140, 140, 140, 1);
+
+}
+
+.footer-contacts__address-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mediaTablet {
+    display: none;
+ }
+}
+
+.footer-menu__link {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.footer-questionary__info-full {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-questionary__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.footer-questionary__info-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.footer-questionary__info-job {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-questionary__text {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 24px;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.footer-copyright {
+  background: rgba(24, 24, 24, 1);
+
+}
+
+.footer-copyright__container-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  @include mediaTablet {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    
+
+ }
+}
+
+.footer-copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+
+}

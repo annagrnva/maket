@@ -1,0 +1,96 @@
+.services {
+  background: $grey-block;
+
+}
+
+.container-servicers {
+  text-align: center;
+   padding-top: 80px;
+
+   @include mediaTablet {
+    padding-top: 40px;
+}
+}
+
+.services-title {
+ 
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.services-line {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  margin-bottom: 24px;
+  background: rgba(79, 143, 240, 1);
+
+}
+
+.services-text {
+  padding-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.content-services__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 38px;
+
+  @include mediaTablet {
+   display: flex;
+   flex-wrap: nowrap;
+}
+}
+
+.content-services {
+  background: rgba(255, 255, 255, 1);
+}
+
+.content-services__frame {
+  width: 360px;
+  height: 250px;
+  text-align: center;
+  padding: 50px;
+
+}
+
+.content-services__frame-img {
+  margin-bottom: 18px;
+}
+
+.content-services__frame-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.content-services__frame-text {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.content-services:hover {
+  color: white;
+  background: rgba(79, 143, 240, 1);
+
+}
+.btn-wrapper {
+  @include mediaTablet {
+    padding-bottom: 40px;
+}
+}
+
+/*
+.content-services__frame-img:hover {
+  background-image: url("/img/tick\ white.png");
+}
+*/
