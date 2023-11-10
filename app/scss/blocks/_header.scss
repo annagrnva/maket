@@ -21,7 +21,7 @@
             font-size: 14px;
             font-weight: 600;
 
-            &--mobile {
+            &--mail {
                 @include mediaMobile {
                     display: none;
                 }
@@ -121,12 +121,14 @@
     background-position: center;
     background-size: cover;
 
+    
     @include mediaTablet {
         background-image: url("/img/bg_for_tablet.png");
     }
     @include mediaMobile {
         background-image: url("/img/bg_for_mobile.png");
     }
+    
 
     &__info {
         text-align: center;
