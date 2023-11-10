@@ -5,19 +5,18 @@
 
 .container-servicers {
   text-align: center;
-   padding-top: 80px;
+  padding: 80px 0;
 
-   @include mediaTablet {
+  @include mediaTablet {
     padding-top: 40px;
-}
+  }
 }
 
 .services-title {
- 
+
   margin-bottom: 10px;
   font-size: 28px;
   font-weight: 800;
-  text-align: center;
   text-transform: uppercase;
   color: black;
 }
@@ -35,7 +34,6 @@
   padding-bottom: 24px;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
 
 }
 
@@ -46,51 +44,60 @@
   margin-bottom: 38px;
 
   @include mediaTablet {
-   display: flex;
-   flex-wrap: nowrap;
-}
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .content-services {
   background: rgba(255, 255, 255, 1);
-}
 
-.content-services__frame {
-  width: 360px;
-  height: 250px;
-  text-align: center;
-  padding: 50px;
-
-}
-
-.content-services__frame-img {
-  margin-bottom: 18px;
-}
-
-.content-services__frame-title {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-
-.content-services__frame-text {
-  font-size: 14px;
-  font-weight: 400;
-
-}
-.content-services:hover {
-  color: white;
-  background: rgba(79, 143, 240, 1);
-
-}
-.btn-wrapper {
-  @include mediaTablet {
-    padding-bottom: 40px;
-}
-}
+  &__frame {
+    width: 360px;
+    height: 250px;
+    text-align: center;
+    padding: 44px;
 
 /*
-.content-services__frame-img:hover {
-  background-image: url("/img/tick\ white.png");
+    &__svg-tick {
+      path {
+        fill: aqua;
+      }
+    }
+    */
+
+    &-img {
+      margin-bottom: 18px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+
+    }
+
+    &:hover {
+      color: white;
+      background: rgba(79, 143, 240, 1);
+
+      path {
+        fill: #ffffff;
+      }
+    }
+
+
+  }
+
 }
-*/
+
+.content-services .btn-wrapper {
+  @include mediaTablet {
+    padding-bottom: 40px;
+  }
+}

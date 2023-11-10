@@ -8,7 +8,7 @@
 
 }
 
-.footer-logo__container {
+.footer-header {
   display: flex;
   justify-content: space-between;
   gap: 182px;
@@ -20,7 +20,7 @@
  }
 }
 
-.footer-logo__blue {
+.footer-header__logo-blue {
   font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
@@ -28,14 +28,14 @@
 
 }
 
-.footer-logo__white {
+.footer-header__logo-white {
   font-size: 20px;
   font-weight: 900;
   text-transform: lowercase;
   color: rgba(255, 255, 255, 1);
 }
 
-.footer-logo__text {
+.footer-header__logo-text {
   text-transform: lowercase;
   color: white;
 
@@ -50,7 +50,7 @@
   padding: 48px 0 64px 0;
 }
 
-.footer-line {
+.footer-header__line {
   width: 1120px;
   background: rgba(140, 140, 140, 1);
   border: 1px solid rgba(140, 140, 140, 1);

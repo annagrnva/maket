@@ -9,19 +9,19 @@
 
 }
 
-.content-lawyers__container {
+.content-lawyers__wrapper {
     text-align: center;
 
 }
 
-.content-lawyers__title {
+.content-lawyers__wrapper-title {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.content-lawyers__line {
+.content-lawyers__wrapper-line {
     display: inline-block;
     width: 50px;
     height: 3px;
@@ -30,44 +30,40 @@
 
 }
 
-.content-lawyers__text {
+.content-lawyers__wrapper-text {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 48px;
 }
 
-.content-staff__container {
+.content-staff__wrapper {
     display: flex;
     gap: 20px;
 }
 
-.content-staff {
+.content-staff { 
+     text-align: center;
     background: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
 
 }
 
 
-.content-staff__frame {
-    text-align: center;
-
-}
-
-.content-staff__pic {
+.content-staff__wrapper-pic {
     width: 265px;
 }
 
-.content-staff__info {
+.content-staff__wrapper-info {
     padding: 20px 16px;
 }
 
-.content-staff__name {
+.content-staff__wrapper-name {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.content-staff__description {
+.content-staff__wrapper-description {
     font-size: 14px;
     font-weight: 300;
     text-transform: lowercase;
