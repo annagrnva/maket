@@ -3,40 +3,6 @@
 
 }
 
-.container-servicers {
-  text-align: center;
-  padding: 80px 0;
-
-  @include mediaTablet {
-    padding-top: 40px;
-  }
-}
-
-.services-title {
-
-  margin-bottom: 10px;
-  font-size: 28px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: black;
-}
-
-.services-line {
-  display: inline-block;
-  width: 50px;
-  height: 3px;
-  margin-bottom: 24px;
-  background: rgba(79, 143, 240, 1);
-
-}
-
-.services-text {
-  padding-bottom: 24px;
-  font-size: 16px;
-  font-weight: 400;
-
-}
-
 .content-services__container {
   display: flex;
   flex-wrap: wrap;
@@ -53,18 +19,11 @@
   background: rgba(255, 255, 255, 1);
 
   &__frame {
-    width: 360px;
+    width: 410px;
     height: 250px;
     text-align: center;
     padding: 44px;
 
-/*
-    &__svg-tick {
-      path {
-        fill: aqua;
-      }
-    }
-    */
 
     &-img {
       margin-bottom: 18px;

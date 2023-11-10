@@ -121,14 +121,15 @@
     background-position: center;
     background-size: cover;
 
-    
+
     @include mediaTablet {
         background-image: url("/img/bg_for_tablet.png");
     }
+
     @include mediaMobile {
         background-image: url("/img/bg_for_mobile.png");
     }
-    
+
 
     &__info {
         text-align: center;
@@ -146,7 +147,12 @@
     }
 
     &__wrapper {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
         &-title--white {
+            display: inline-block;
             font-size: 30px;
             font-weight: 300;
             margin-bottom: 8px;
@@ -163,6 +169,7 @@
         }
 
         &-title--blue {
+            display: inline-block;
             font-size: 56px;
             font-weight: 600;
             margin-bottom: 8px;
@@ -179,6 +186,8 @@
         }
 
         &-text {
+            max-width: 1090px;
+            display: inline-block;
             font-size: 20px;
             font-weight: 400;
             text-align: center;
