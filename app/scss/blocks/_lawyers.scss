@@ -1,70 +1,60 @@
 .content-lawyers {
-
-    padding: 80px 0;
     background: $grey-block;
-
-    @include mediaTablet {
-        padding: 40px;
-    }
-
 }
 
-.content-lawyers__wrapper {
-    text-align: center;
 
-}
 
-.content-lawyers__wrapper-title {
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.content-lawyers__wrapper-line {
-    display: inline-block;
-    width: 50px;
-    height: 3px;
-    margin-bottom: 24px;
-    background: rgba(79, 143, 240, 1);
-
-}
-
-.content-lawyers__wrapper-text {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 48px;
-}
-
-.content-staff__wrapper {
-    display: flex;
-    gap: 20px;
-}
-
-.content-staff { 
-     text-align: center;
+.content-staff {
     background: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
 
-}
+    @include mediaTablet {
+        min-width: 280px;
+    }
+
+    @include mediaMobile {
+        min-width: 240px;
+    }
 
 
-.content-staff__wrapper-pic {
-    width: 265px;
-}
+    &__wrapper {
+        display: flex;
+        gap: 18px;
 
-.content-staff__wrapper-info {
-    padding: 20px 16px;
-}
+        @include mediaTablet {
+            overflow: scroll;
+        }
 
-.content-staff__wrapper-name {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
+        @include mediaMobile {
+            overflow: scroll;
+        }
 
-.content-staff__wrapper-description {
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: lowercase;
+        &-pic {
+            width: 304px;
+
+            @include mediaTablet {
+               width: 280px;
+            }
+
+            @include mediaMobile {
+               width: 240px;
+            }
+        }
+
+        &-info {
+            padding: 20px 16px;
+        }
+
+        &-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &-description {
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: lowercase;
+        }
+    }
 }

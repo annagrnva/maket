@@ -1,24 +1,8 @@
 .review {
-    background-image: url("/img/Фон\ блока.png");
+    background-image: url("/img/review_block.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 80px 0;
-}
-
-.review-title {
-    font-size: 28px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.review-title__line {
-    width: 50px;
-    height: 3px;
-    margin-bottom: 48px;
-    background: rgba(79, 143, 240, 1);
-
 }
 
 .review-content__container {
