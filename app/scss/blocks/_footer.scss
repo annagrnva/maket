@@ -36,6 +36,8 @@
 }
 
 .footer-header__logo-text {
+  text-align: justify;
+  font-size: 16px;
   text-transform: lowercase;
   color: white;
 
@@ -51,7 +53,7 @@
 }
 
 .footer-header__line {
-  width: 1120px;
+  width: 100%;
   background: rgba(140, 140, 140, 1);
   border: 1px solid rgba(140, 140, 140, 1);
 }
