@@ -127,11 +127,11 @@
 
 
     @include mediaTablet {
-        background-image: url("/img/bg_for_tablet.png");
+      
     }
 
     @include mediaMobile {
-        background-image: url("/img/bg_for_mobile.png");
+     
     }
 
 
