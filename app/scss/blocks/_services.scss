@@ -1,5 +1,16 @@
 .services {
+  text-align: center;
   background: $grey-block;
+  padding-bottom: 80px;
+
+  @include mediaTablet {
+    padding-bottom: 60px;
+  }
+
+  @include mediaMobile {
+    padding-bottom: 40px;
+  }
+
 
 }
 
@@ -11,15 +22,15 @@
 
   @include mediaTablet {
     display: flex;
-  justify-content: space-between;
-  gap: 24px;
+    justify-content: center;
+    gap: 24px;
   }
+
   @include mediaMobile {
     display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
+    flex-wrap: wrap;
     margin-bottom: 30px;
-}
+  }
 }
 
 .content-services {
@@ -35,12 +46,13 @@
       max-width: 320px;
       max-height: 225px;
       padding: 30px 32px;
-  }
-  @include mediaMobile {
-    max-width: 220px;
-    max-height: 215px;
-    padding: 12px 10px;
-}
+    }
+
+    @include mediaMobile {
+      max-width: 220px;
+      max-height: 215px;
+      padding: 12px 10px;
+    }
 
 
     &-img {

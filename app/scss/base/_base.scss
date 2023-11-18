@@ -4,6 +4,9 @@ body {
     font-family: $font-text;
 }
 
+img {
+    width: 100%;
+}
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -11,11 +14,6 @@ body {
 
 }
 
-.btn-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .btn-blue {
     font-size: 14px;
@@ -68,25 +66,24 @@ body {
     }
 }
 
-.block-grey {
+.block-info {
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
 
     @include mediaTablet {
         padding: 60px 0;
+        margin: 0 auto;
     }
     @include mediaMobile {
         padding: 40px 0;
+        margin: 0 auto;
     }
 
     &__header {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
+     
 
 
         &-title {
-            display: inline-block;
             margin-bottom: 13px;
             font-size: 28px;
             font-weight: 800;
@@ -102,84 +99,27 @@ body {
         }
 
         &-line {
-            display: inline-block;
             width: 50px;
             height: 3px;
-            margin-bottom: 24px;
+            margin: 0 auto 24px;
             background: rgba(79, 143, 240, 1);
         }
 
         &-text {
             max-width: 920px;
-            display: inline-block;
             margin-bottom: 48px;
             font-size: 16px;
             font-weight: 400;
+            margin: 0 auto 48px;
 
             @include mediaTablet {
                 font-size: 14px;
+                margin: 0 auto;
             }
             @include mediaMobile {
                 font-size: 14px;
+                margin: 0 auto;
         
-            }
-        }
-    }
-}
-
-.block-header {
-    padding: 80px 0;
-
-    @include mediaTablet {
-        padding: 60px 0;
-    }
-
-    @include mediaMobile {
-        padding: 40px 0;
-    }
-
-    &__white-item {
-        &--title {
-            font-size: 28px;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: black;
-            margin-bottom: 10px;
-
-            @include mediaTablet {
-                font-size: 24px;
-            }
-
-            @include mediaMobile {
-                font-size: 20px;
-            }
-
-            &--blue {
-                color: #4F8FF0,
-
-            }
-        }
-
-        &--line {
-            width: 50px;
-            height: 3px;
-            margin-bottom: 24px;
-            background: rgba(79, 143, 240, 1);
-
-        }
-
-        &--text {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            margin-bottom: 32px;
-
-            &--paragraph {
-                margin-bottom: 20px;
-
-                &:last-child {
-                    margin-bottom: 0px;
-                }
             }
         }
     }

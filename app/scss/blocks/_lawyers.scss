@@ -1,65 +1,70 @@
 .content-lawyers {
     background: $grey-block;
+    padding-bottom: 80px;
 }
 
 
+.content-staff__wrapper {
+    display: flex;
+    gap: 18px;
+
+    @include mediaTablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     
+    }
+
+    @include mediaMobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .content-staff {
+    text-align: center;
     background: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    transition: 0.2s ease all;
 
     &:hover {
         opacity: 0.25;
     }
 
     @include mediaTablet {
-        min-width: 280px;
+       width: 25%;
     }
 
     @include mediaMobile {
-        min-width: 240px;
+width: auto;
     }
 
 
-
-    &__wrapper {
-        display: flex;
-        gap: 18px;
+    &__pic {
 
         @include mediaTablet {
-            overflow: scroll;
+            
         }
 
         @include mediaMobile {
-            overflow: scroll;
+            
         }
+    }
 
-        &-pic {
-            width: 304px;
+    &__info {
+        padding: 20px 16px;
+    }
 
-            @include mediaTablet {
-                width: 280px;
-            }
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 
-            @include mediaMobile {
-                width: 240px;
-            }
-        }
-
-        &-info {
-            padding: 20px 16px;
-        }
-
-        &-name {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        &-description {
-            font-size: 14px;
-            font-weight: 300;
-            text-transform: lowercase;
-        }
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: lowercase;
     }
 }

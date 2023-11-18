@@ -20,6 +20,10 @@
             gap: 8px;
             font-size: 14px;
             font-weight: 600;
+            &-img {
+                height: 20px;
+                width: 12px;
+            }
 
             &--mail {
                 @include mediaMobile {
@@ -50,7 +54,7 @@
         justify-content: space-between;
         align-items: center;
 
-        &-logo--blue {
+        &-logo--big {
             font-size: 28px;
             font-weight: 900;
             text-transform: uppercase;
@@ -61,7 +65,7 @@
             }
         }
 
-        &-logo--white {
+        &-logo--small {
             font-size: 20px;
             font-weight: 900;
             text-transform: lowercase;
@@ -101,17 +105,17 @@
         text-decoration: none;
         color: white;
 
-        &--blue {
+        &:hover {
             text-decoration: underline;
             color: rgba(79, 143, 240, 1);
         }
-    }
 
-    @include mediaTablet {
-        display: none;
+
+        @include mediaTablet {
+            display: none;
+        }
     }
 }
-
 
 
 
@@ -133,25 +137,26 @@
 
     &__info {
         text-align: center;
-        padding: 120px 0 36px 0;
+        padding-top: 120px;
+        padding-left: 15px;
+        padding-bottom: 36px;
+        padding-right: 15px;
 
 
         @include mediaTablet {
-            padding: 60px 0 24px 0;
+            padding-top: 60px;
+            padding-bottom: 24px;
         }
 
         @include mediaMobile {
-            padding: 50px 0 50px 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 
     &__wrapper {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
 
         &-title--white {
-            display: inline-block;
             font-size: 30px;
             font-weight: 300;
             margin-bottom: 8px;
@@ -168,7 +173,6 @@
         }
 
         &-title--blue {
-            display: inline-block;
             font-size: 56px;
             font-weight: 600;
             margin-bottom: 8px;
@@ -186,11 +190,10 @@
 
         &-text {
             max-width: 1090px;
-            display: inline-block;
             font-size: 20px;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 48px;
+            margin: 0 auto 48px;
             color: rgba(255, 255, 255, 1);
 
             @include mediaTablet {

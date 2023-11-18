@@ -96,6 +96,11 @@
       margin: 16px 0;
     }
 
+    &-img {
+      width: 55px;
+      height: 55px;
+    }
+
     &-right {
       &--title {
         font-size: 12px;
@@ -147,6 +152,11 @@
   display: flex;
   gap: 24px;
   margin-bottom: 16px;
+
+  &-img {
+    width: 65px;
+    height: 65px;
+  }
 
   &-right {
     display: flex;
