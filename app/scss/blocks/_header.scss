@@ -92,9 +92,9 @@
        right: 0;
        top: 0;
        width: 350px;
-       background-color: aqua;
+       background-color: rgba(1, 1, 1, 0.76);
+       ;
        padding: 50px 20px 20px 20px;
-       transition: transform.5s;
     }
 
     &-link {
@@ -281,10 +281,19 @@
     transform: translateY(10px);
 }
 
+.header-nav.header-nav__open.header-nav__btn-span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
 .header-nav.header-nav__open.header-nav__btn-span:nth-child(2) {
     opacity: 0;
 }
-.header-nav.header-nav__open.header-nav__menu {
+
+.header-nav.header-nav__open.header-nav__btn-span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.header-nav.header-nav__open .header-nav__menu {
     @include mediaTablet {
         transform: translateX(100%);
     }
